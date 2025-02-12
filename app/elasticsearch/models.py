@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from elasticsearch_dsl import Document, InnerDoc
 
 from app.importer.models.tasks import Task

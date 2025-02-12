@@ -22,3 +22,5 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 ENV PATH="/app/.venv/bin:$PATH"
 ENV PYTHONPATH "${PYTHONPATH}:/app/app"
+
+ENTRYPOINT [ "typer", "app/main.py", "run" ]
